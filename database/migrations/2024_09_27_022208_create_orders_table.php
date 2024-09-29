@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->string('paintingId')->unique();
             $table->foreignIdFor(\App\Models\User::class)->constrained()->cascadeOnDelete()->cascadeOnUpdate();
-            $table->foreignIdFor(\App\Models\Painting::class)->constrained()->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreign('paintingId')->references('pid')->on('paintings')->cascadeOnDelete()->cascadeOnUpdate();
             $table->integer('quantity');
             $table->timestamp('orderDate');
             $table->string('orderStatus');
