@@ -1,12 +1,19 @@
+@props(['genres'=>[]])
 <header>
     <div class="bg-white shadow m-[2px] flex-col space-y-4">
-        <x-status-bar>login</x-status-bar>
+        @guest()
+            <x-status-bar href="/login">login</x-status-bar>
+        @endguest
+
+        @auth()
+            <x-status-bar href="/logout">Welcome </x-status-bar>
+        @endauth
 
         <div class="max-w-7xl  sm:px-6 lg:px-8">
-            <h1 class="text-2xl font-bold tracking-tight text-gray-900 py-1">Paintings Portal</h1>
+            <x-title/>
         </div>
 
     </div>
 
-    <x-nav></x-nav>
+    <x-nav :$genres></x-nav>
 </header>

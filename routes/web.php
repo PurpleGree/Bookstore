@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use \App\Models\Genre;
 
 Route::get('/', function () {
-    return view('index');
+    $genres = Genre::all();
+    return view('index', ['genres' => $genres]);
 });

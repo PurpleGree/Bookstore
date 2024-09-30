@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout :$genres>
 
     <section class="flex-grow grid grid-cols-4 gap-4 auto-rows-3  ">
         <img src="{{ Vite::asset('resources\images\paintingImages\01070.jpg') }}" alt=""
