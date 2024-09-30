@@ -7,3 +7,4 @@ Route::get('/', function () {
     $genres = Genre::all();
     return view('index', ['genres' => $genres]);
 });
+

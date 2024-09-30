@@ -1,26 +1,8 @@
 <x-layout :$genres>
 
-    <section class="flex-grow grid grid-cols-4 gap-4 auto-rows-3  ">
-        <img src="{{ Vite::asset('resources\images\paintingImages\01070.jpg') }}" alt=""
-            class="h-[100%] w-[100%] p-1 ">
-        <img src="{{ Vite::asset('resources\images\paintingImages\01070.jpg') }}" alt=""
-            class="h-[100%] w-[100%] p-1 ">
-        <img src="{{ Vite::asset('resources\images\paintingImages\01070.jpg') }}" alt=""
-            class="h-[100%] w-[100%] p-1 ">
-        <img src="{{ Vite::asset('resources\images\paintingImages\01070.jpg') }}" alt=""
-            class="h-[100%] w-[100%] p-1 ">
-        <img src="{{ Vite::asset('resources\images\paintingImages\01070.jpg') }}" alt=""
-            class="h-[100%] w-[100%] p-1 ">
-        <img src="{{ Vite::asset('resources\images\paintingImages\01070.jpg') }}" alt=""
-            class="h-[100%] w-[100%] p-1 ">
-        <img src="{{ Vite::asset('resources\images\paintingImages\01070.jpg') }}" alt=""
-            class="h-[100%] w-[100%] p-1 ">
-        <img src="{{ Vite::asset('resources\images\paintingImages\01070.jpg') }}" alt=""
-            class="h-[100%] w-[100%] p-1 ">
-        <img src="{{ Vite::asset('resources\images\paintingImages\01070.jpg') }}" alt=""
-            class="h-[100%] w-[100%] p-1 ">
-        <img src="{{ Vite::asset('resources\images\paintingImages\01070.jpg') }}" alt=""
-            class="h-[100%] w-[100%] p-1 ">
+    <section class="flex-grow flex-nowrap w-[682.875px] h-[294px]">
+        <div class="w-full h-full p-2"><img src="{{ Vite::asset('resources\images\paintingImages\02070.jpg') }}" alt="" class="w-full h-full"></div>
+
 
     </section>
 
