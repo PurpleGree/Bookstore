@@ -10,4 +10,10 @@
 
         /* Hide scrollbar for IE, Edge, and Firefox */
 
+       @media screen and (max-width: 1200px) {
+            .hide-nav{
+                display: none;
+            }
+       }
+
 

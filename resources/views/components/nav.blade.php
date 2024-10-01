@@ -1,5 +1,5 @@
 @props(['genres'=>[]])
-<div>
+<div class="hide-nav">
     <nav class="bg-green-600/70">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
@@ -13,9 +13,9 @@
                     <div class="hidden md:block">
                         <div class="ml-10 flex space-x-4">
                             <!-- Navigation links -->
-                            <x-nav-item active="{{request()->is('/')}}">Home</x-nav-item>
+                            <x-nav-item href="/" active="{{request()->is('/')}}">Home</x-nav-item>
                             @foreach($genres as $genre)
-                                <x-nav-item active="{{request()->is('/'.$genre->genreName)}}">{{$genre->genreName}}</x-nav-item>
+                                <x-nav-item  href="/genre/{{$genre->genreName}}" active="{{request()->is('/'.$genre->genreName)}}">{{$genre->genreName}}</x-nav-item>
                             @endforeach
 
                         </div>

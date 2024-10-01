@@ -1,7 +1,7 @@
 @props(['genres'=>[]])
-<section class="w-[20%]">
+<section >
     <ul>
-        <li class="border border-transparent py-2 rounded-t-sm align-top font-bold hover:bg-gray-700 transition-colors duration-500 bg-gray-700 text-gray-500 "><a href="" class="text-center block">GENRE</a></li>
+        <li class="border border-transparent py-2 rounded-t-sm align-top font-bold hover:bg-gray-700 transition-colors duration-500 bg-gray-700 text-white/20 "><a href="" class="text-center block">GENRE</a></li>
         @foreach($genres as $genre)
             @if(request()->is('/'.$genre->genreName))
                 <x-menu-item class="bg-green-600 text-gray-800">{{$genre->genreName}} </x-menu-item>

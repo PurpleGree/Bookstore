@@ -18,7 +18,7 @@
 
 @props(['genres'])
 
-<body class="min-w-96 ">
+<body class="">
     <div class="lg:w-[80%] md:w-[80%] sm:w-[95%] mx-auto space-y-5 flex-col ">
 
         <x-header :$genres></x-header>

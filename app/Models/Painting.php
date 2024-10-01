@@ -12,4 +12,10 @@ class Painting extends Model
     protected $primaryKey = 'pid';
     public $incrementing = false; // If pid is not auto-incrementing
     protected $keyType = 'string'; // the datatype of the pkey
+
+    public function genre(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(Genre::class);
+    }
+
 }

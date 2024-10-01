@@ -11,4 +11,10 @@ class Genre extends Model
     use HasFactory;
     protected $fillable = ['genreName'];
     public $timestamps = false;
+
+
+    public function paintings(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Painting::class);
+    }
 }
